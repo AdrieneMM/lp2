@@ -40,21 +40,22 @@ c=Math.sqrt(d);
 System.out.println(c);
 
     Reta r1 =new Reta();
-     //r1.setP1(p1);
+     r1.setP1(p1);
      r1.setP2(p2);
 
      r1.getP1().getX();  
      r1.getP2().getY();
 
  System.out.println(" P1 x : " +r1.getP1().getX()+ "  "+  " P2 y : " + r1.getP2().getY()) ; 
-     p1.setX(30);
-     p2.setY(40);
+     p1.setX(15);
+     p2.setY(50);
      p1.setY(30);
      p2.setX(40);
  System.out.println (" Troca de valores : ");
  System.out.println(" P1 x  : "+r1.getP1().getX()+ "  "+ "P2 y :"+ r1.getP2().getY() +"  "+ " P1 y :"+ r1.getP1().getY() +"  " + " P2 x :"+ r1.getP2().getX()) ; 
- 
-
-
+   System.out.println( " Area do triangulo ");
+System.out.println (r1.Area(r1.getP1().getX() , r1.getP1().getY(),r1.getP2().getX(), r1.getP2().getY())) ;
+    
+   
 }
 }
