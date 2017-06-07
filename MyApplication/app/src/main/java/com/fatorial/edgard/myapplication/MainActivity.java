@@ -39,4 +39,55 @@ public class MainActivity extends AppCompatActivity {
             tam--;
         }
     }
+    public void Subtrair(View mostra) {
+        if (tam > 1) {
+            int v1 = (int) pilha.pop();
+            int v2 = (int) pilha.pop();
+            int v3 = v1 - v2;
+            pilha.push(v3);
+            TextView txt2 = (TextView) findViewById(R.id.Caixa);
+            txt2.setText(pilha.toString());
+            tam--;
+        }
+    }
+    public void Multiplicacao(View mostra) {
+        if (tam > 1) {
+            int v1 = (int) pilha.pop();
+            int v2 = (int) pilha.pop();
+            int v3 = v1 * v2;
+            pilha.push(v3);
+            TextView txt2 = (TextView) findViewById(R.id.Caixa);
+            txt2.setText(pilha.toString());
+            tam--;
+        }
+    } public void Divisao(View mostra) {
+        if (tam > 1) {
+            int v1 = (int) pilha.pop();
+            int v2 = (int) pilha.pop();
+            int v3 = v1 / v2;
+            pilha.push(v3);
+            TextView txt2 = (TextView) findViewById(R.id.Caixa);
+            txt2.setText(pilha.toString());
+            tam--;
+        }
+    }
+    public void Desempilhar(View mostra){
+        if(tam > 0) {
+            pilha.pop();
+            TextView txt2 = (TextView) findViewById(R.id.Caixa);
+            txt2.setText(pilha.toString());
+            tam--;
+        }
+    }
+    public void Limpar(View mostra){
+        if(tam > 0) {
+            while (tam != 0) {
+                pilha.pop();
+                TextView txt2 = (TextView) findViewById(R.id.Caixa);
+                txt2.setText(pilha.toString());
+                tam--;
+            }
+        }
+
+    }
 }
